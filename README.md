@@ -1,4 +1,3 @@
-Brainful Labs
 (Development)
 
 # Strapi/Next Boilerplate
