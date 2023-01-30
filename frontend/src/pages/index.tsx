@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { loadPages } from '@/lib/load-pages';
+import { loadPages } from '@/helpers/load-pages';
 
 const HomePage = (props: any) => {
   return (
