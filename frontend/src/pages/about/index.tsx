@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { loadPages } from '@/lib/load-pages';
 
-const HomePage = (props: any) => {
+const AboutPage = (props: any) => {
   return (
     <>
       <Head>
@@ -10,13 +10,13 @@ const HomePage = (props: any) => {
       </Head>
 
       <h1 className="mx-auto max-w-sm text-center font-bold text-4xl">
-        {props.page.data.attributes.title}
+        About
       </h1>
     </>
   );
 }
 
-export default HomePage;
+export default AboutPage;
 
 export const getStaticProps = async () => {
   // Instead of fetching your `/api` route you can call the same

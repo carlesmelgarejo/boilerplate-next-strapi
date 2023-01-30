@@ -1,16 +1,15 @@
 {
-  "collectionName": "components_page_text_blocks",
+  "collectionName": "components_page_simple_items",
   "info": {
-    "displayName": "text-block",
-    "description": ""
+    "displayName": "simple-items"
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
+    "url": {
+      "type": "string"
     },
     "image": {
       "allowedTypes": [

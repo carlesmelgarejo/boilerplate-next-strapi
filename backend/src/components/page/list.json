@@ -1,7 +1,7 @@
 {
   "collectionName": "components_page_lists",
   "info": {
-    "displayName": "item",
+    "displayName": "items",
     "description": ""
   },
   "options": {},
@@ -9,7 +9,7 @@
     "title": {
       "type": "string"
     },
-    "items": {
+    "item": {
       "type": "component",
       "repeatable": true,
       "component": "page.text-block"

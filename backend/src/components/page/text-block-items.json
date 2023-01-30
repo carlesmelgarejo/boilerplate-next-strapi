@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_text_block_items",
+  "info": {
+    "displayName": "text-block-items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "items": {
+      "displayName": "simple-items",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.simple-items"
+    }
+  }
+}
