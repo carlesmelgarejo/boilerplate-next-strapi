@@ -1,7 +1,7 @@
 import NavigationMenu from '../MainNavigation/MainNavigation';
 import Link from "next/link";
 import Image from 'next/image';
-import headerImage from '../../../assets/images/common/home-top.jpg'
+import headerImage from '../../../assets/images/common/home-top.jpg';
 
 const MainHeader = (props: any) => {
   return (

@@ -1,7 +1,45 @@
 import Link from "next/link";
 import MenuLi from "@/components/ui/MenuLi";
+import { useEffect, useState } from "react";
+import { fetchQuery } from "@/helpers/utils";
+import { loadPages } from "@/helpers/load-pages";
 
-const NavigationMenu = () => {
+const NavigationMenu = (props: any) => {
+  /*
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedSlugs, setLoadedSlugs] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      'http://localhost:1337/api/pages'
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const slugs = [] as any;
+        for (const key in data) {
+          const slug = {
+            id: key,
+            ...data[key]
+          }
+
+          slugs.push(slug);
+        }
+        setIsLoading(false);
+        setLoadedSlugs(slugs);
+      });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <p>Loading...</p>
+    )
+  }
+
+  console.log(loadedSlugs[0]);
+  */
+ 
   return (
     <nav className="mx-auto">
       <aside>
