@@ -21,7 +21,7 @@ export default HomePage;
 export const getStaticProps = async () => {
   // Instead of fetching your `/api` route you can call the same
   // function directly in `getStaticProps`
-  const dataPage = await loadPages(1);
+  const dataPage = await loadPages(3);
 
   return {
     props: {

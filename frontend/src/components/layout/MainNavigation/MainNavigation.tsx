@@ -1,11 +1,6 @@
 import Link from "next/link";
 import MenuLi from "@/components/ui/MenuLi";
 import { useEffect, useState } from "react";
-import { fetchQuery } from "@/helpers/utils";
-import { loadPages } from "@/helpers/load-pages";
-import { style } from './style.css';
-
-
 
 const NavigationMenu = (props: any) => {
   /*
@@ -102,5 +97,10 @@ const NavigationMenu = (props: any) => {
     </nav>
   )
 }
-
+/*
+const StyleLi = tw.li`
+  background-color: red;
+  ${tw`text-black`}
+`;
+*/
 export default NavigationMenu;

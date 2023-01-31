@@ -36,7 +36,7 @@ export const getStaticProps = async () => {
   
   // Instead of fetching your `/api` route you can call the same
   // function directly in `getStaticProps`
-  const dataPage = await loadPages(2);
+  const dataPage = await loadPages(4);
 
   const imagePageIntro = `${NEXT_PUBLIC_STRAPI_URL}`+ dataPage.data.attributes.image.data.attributes.formats.medium.url;
 

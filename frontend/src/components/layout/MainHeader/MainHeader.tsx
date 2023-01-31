@@ -1,33 +1,61 @@
 import NavigationMenu from '../MainNavigation/MainNavigation';
 import Link from "next/link";
 import Image from 'next/image';
-import headerImage from '../../../assets/images/common/home-top.jpg';
+import headerImage from '../../../assets/images/common/header.jpg';
+import styled from "styled-components";
+
+export const Title = styled.h1`
+  // Positioning
+  position: absolute;
+  top: 6%;
+  left: 1%;
+  transform: rotate(180deg);
+
+  // Box model
+  writing-mode: vertical-rl;
+
+  // Typography
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #F1AA26;
+  line-height: 1;
+`;
+
+export const Subtitle = styled.p`
+  // Positioning
+  position: absolute;
+  top: 88%;
+  left: 23.5%;
+
+  // Typography
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #F1AA26;
+  line-height: 1;
+`;
 
 const MainHeader = (props: any) => {
   return (
     <>
       <header>
-        <div className="bg-[#adb6a2] h-14 text-right">
-          <Link href="#" className="uppercase text-white font-semibold px-4 py-5 inline-block text-sm">Previous years</Link>
+        <div className="bg-[#F1AA26] h-14 text-right rounded">
+          <Link href="#" className="uppercase text-white font-semibold px-4 py-5 inline-block text-sm text-[#1F6B8E]">Previous years</Link>
         </div>
 
-        <div className="my-10 relative">
+        <div className="my-6 relative">
           <Image
             alt="Next.js logo"
             src={headerImage}
-            width={1200}
-            height={400}
+            width={1456}
+            height={378}
+            className="w-full shadow-md rounded"
+            quality={90}
             placeholder="blur"
-            className="w-full shadow-md"
           />
-          <div className="absolute top-1/2 left-1/2 text-white translate-x-[-50%] translate-y-[-50%]">
-            <p className="text-center">IIIA-CSIC</p>
-            <h1 className="text-center text-5xl">
-              <Link href="/">
-                Annual Report 2020
-              </Link>
-            </h1>          
-          </div>
+
+          <Title>Annual Report 2020</Title>
+
+          <Subtitle>IIIA-CSIC</Subtitle>
         </div>
 
         <div className="mx-auto max-w-screen-xl">

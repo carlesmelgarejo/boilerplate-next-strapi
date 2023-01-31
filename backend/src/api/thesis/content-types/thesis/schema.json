@@ -12,8 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "advisor": {
+      "type": "string"
+    },
     "title": {
       "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
