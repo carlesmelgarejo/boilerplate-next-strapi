@@ -3,6 +3,9 @@ import MenuLi from "@/components/ui/MenuLi";
 import { useEffect, useState } from "react";
 import { fetchQuery } from "@/helpers/utils";
 import { loadPages } from "@/helpers/load-pages";
+import { style } from './style.css';
+
+
 
 const NavigationMenu = (props: any) => {
   /*
